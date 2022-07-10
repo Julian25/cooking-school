@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cooking Hut</title>
+        <link rel="stylesheet" type="text/css" href="./estilos.css">
+        <!--Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <!--Fin google font-->
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="brand">
+                    <img class="brand__logo" src="./imagenes/Cooking.png" alt="">
+                </div>
+
+                <nav class="menu__hamburger" id="menu__hamburger" onclick="myFunction(this); hamburger();">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </nav>
+                <nav id="menu_dropdown">
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link" href="./index.html">Home</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Experts</a></li>
+                        <li class="menu__item"><a class="menu__link" href="./pricing.html">Pricing</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </header>
+        <main>
+            <section class="experts">
+        
+                <div class="experts__main">
+                    <h1>Meet our Experts</h1>
+                <img src="./imagenes/experts.png" alt="">
+                </div>
+                <div class="container__wrapper">
+                    <div class="card">
+                        <div class="card__thumbnail">
+                            <img class="card__img" src="./imagenes/italian.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <h3 class="card__title">Italian food</h3>
+                            <p class="card__paragraph">Turn your home into a small part of Italy. Learn to cook the best recipes of Italian food with the prestigious chef Massimo Cracco.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__thumbnail">
+                            <img class="card__img"  src="./imagenes/french.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <h3 class="card__title">French food</h3>
+                            <p class="card__paragraph">Surprise your friends and family with a gastronomic trip to France. Learn to cook the best recipes of French food with the prestigious chef Alain Passard.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__thumbnail">
+                            <img class="card__img" src="./imagenes/asian.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <h3 class="card__title">Asian food</h3>
+                            <p class="card__paragraph">Experience the most interesting of the ancient traditions of Asian culture. Learn to cook the best recipes of Asian food with the prestigious chef Niki Hunag.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__thumbnail">
+                            <img class="card__img" src="./imagenes/vegan.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <h3 class="card__title">Vegan food</h3>
+                            <p class="card__paragraph">Don't suffer anymore having a vegan guest at your meetings. Learn to cook the best vegan recipes with the prestigious chef Bryant Tucker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="advertisement">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0OT-cgMvOvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+            </section>
+        
+        </main>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+
+</html>
+    

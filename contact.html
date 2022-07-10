@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Hut</title>
+    <!--Hoja de estilos propia -->>
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
+    <!--Hoja de estilos de boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!--Fin google font-->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="brand">
+                <img class="brand__logo" src="./imagenes/Cooking.png" alt="">
+            </div>
+
+            <nav class="menu__hamburger" id="menu__hamburger" onclick="myFunction(this); hamburger();">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </nav>
+            <nav id="menu_dropdown">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="./index.html">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./experts.html">Experts</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./pricing.html">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+
+            <div class="container-fluid contact__main">
+                <h2 id="contact__title">Contact Us</h2>
+                <form id="user-form" class="form">
+                    <div class="row">
+                        <div class="col-lg-8 contact__form">
+
+                            <div class="form-box">
+                                <input type="text" placeholder="Name" class="form-control contact__form-element"
+                                    name="nickName" id="nickName">
+                                <small class="error-text">Introduce a name</small>
+                            </div>
+                            <div class="form-box">
+                                <input type="text" placeholder="Last name" class="form-control contact__form-element">
+                                <small class="error-text">Introduce a last name</small>
+                            </div>
+                            <div class="form-box">
+                                <input type="text" placeholder="email" class="form-control contact__form-element"
+                                    name="email" id="email">
+                                <small class="error-text">Introduce a valid email</small>
+                            </div>
+                            <div class="form-box">
+                                <textarea placeholder="Comment" rows="5" class="form-control contact__form-element"
+                                    name="comment"></textarea>
+                                <small class="error-text">Introduce a comment</small>
+                                <button type="button" class="btn btn-dark buttom__submit"
+                                    id="submit-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/form.js"></script>
+
+</body>
+
+</html>

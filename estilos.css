@@ -1,0 +1,552 @@
+body {
+    font-family: rubik, sans-serif !important;
+    margin: 0;
+    display: grid;
+    grid-template: 
+    "header header header header" 70px
+    "main   main   main   main" 100vh
+    / 1fr 4fr 4fr 1fr;
+}
+
+
+
+header {
+    grid-area: header;
+    background-color: #FFCCCC;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    grid-area:  main;
+    background-color: #FAACA8;   
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+}
+
+.container {
+    display: flex;
+    margin: 0 !important;
+}
+
+/*header*/
+
+.brand__logo {
+    height: 60px;
+    width: 200px;
+    margin-top: 5px;
+    margin-right: 10px !important;
+}
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    margin-left: 500px;
+    padding-block: 0.5rem !important;
+    margin-top: 16px !important;
+}
+
+.menu__item {
+    margin: 0;
+    padding: 0;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 60px !important;
+}
+
+.menu__link:hover {
+    background-color: #ff66cc;
+    color:#ffffff;
+}
+
+/*home*/
+
+.aboutus {
+    display: flex;
+}
+
+.aboutus__contact {
+    max-width: 480px;
+    height: 600px;
+}
+.aboutus__contact h1 {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 20x;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.aboutus__contact p {
+    margin-top: 30px;
+    padding-left: 40px;
+    font-size: 20px;
+    text-align: justify;
+    padding-right: 20x;
+    box-sizing: border-box;
+}
+
+.aboutus__contact-buttom {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.buttom {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin-left: 300px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+.aboutus__img {
+    width: 400px;
+    height: 600px;
+    justify-content: flex-end;
+    margin-left: 300px;
+}
+
+.aboutus__img img {
+    max-width: 400px;
+    max-height: 600px;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+
+
+/*experts*/
+
+.experts {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.experts__main {
+    margin: auto;
+    max-width: 800px;
+}
+
+.experts__main h1 {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 20x;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.experts__main img {
+    max-width: 800px;
+    margin-top: 50px;
+    border-radius: 20px;
+
+}
+
+.container__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.card {
+    background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+    border-radius: 15px;
+    padding: 20px;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card__thumbnail {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 100%;
+}
+.card__text {
+    width: 250px;
+    height: 100px;
+    
+}
+.card__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  
+}
+
+.card__paragraph {
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.advertisement {
+    margin: auto;
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+/*pricing*/
+
+.pricing {
+    display: flex;
+    height: auto;
+    margin: auto;
+}
+
+.pricing__basic, .pricing__professional {
+    max-width: 500px;
+    margin: auto;
+}
+
+.pricing__title {
+    font-size: 60px;
+    text-align: center;
+}
+
+.pricing__value {
+    font-size: 150px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.pricing__description {
+    margin-top: 20px;
+}
+
+.pricing__description-element {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/*contact*/
+
+.contact__main {
+    margin: auto;
+    max-width: 1000px;
+    height: 800px;
+
+}
+
+#contact__title {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.contact__form {
+    margin: auto;
+}
+.contact__form-element {
+    margin-top: 40px;
+    width: 600px;
+}
+
+.buttom__submit {
+
+    color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 20px !important;
+    margin-left: 500px;
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .menu {
+        margin-left: 0;
+    }
+
+    .aboutus__contact h1 {
+        font-size: 40px;
+    }
+
+    .aboutus__contact p {
+        font-size: 18px;
+            
+    }
+    .buttom {
+        padding: 5px 5px;
+        margin-left: 250px;
+    }
+
+    .aboutus__img {
+        margin-left: 100px;
+        width: 300px;
+    }
+
+    .aboutus__img img {
+        max-width: 300px;
+        
+        
+    }
+
+    .pricing__title {
+        font-size: 40px;
+        
+    }
+
+    .pricing__value {
+        font-size: 120px;
+        
+    }
+    .pricing__description {
+        margin-top: 20px;
+    }
+
+    .pricing__description-element {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        margin-left: 0;
+    }
+    
+    .aboutus__contact h1 {
+        font-size: 40px;
+    }
+    
+    .aboutus__contact p {
+        font-size: 18px;
+            
+    }
+    .buttom {
+        padding: 5px 5px;
+        margin-left: 250px;
+    }
+    
+    .aboutus__img {
+        margin-left: 25px;
+        width: 300px;
+    }
+    
+    .aboutus__img img {
+        max-width: 300px;
+    }
+
+    .experts__main {
+        max-width: 600px;
+    }
+    
+    .experts__main img {
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    body {
+        grid-template: 
+        "header header header header" auto
+        "main   main   main   main" auto
+        / 1fr 4fr 4fr 1fr;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .brand__logo {
+        height: auto;
+        width: 100%;
+        margin: auto ; 
+        margin-top: 5px;
+        margin-right: 0 !important;
+    }
+    #menu_dropdown {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: column;
+        padding-block: 0 !important;
+        margin-top: 0 !important;
+        padding: 0;
+        align-items: center;
+    }
+    
+    .menu__item {
+        margin: auto;
+        padding: 5px;
+    }    
+
+    .menu__link {
+        font-size: 25px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .aboutus {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: auto;
+    }
+
+    .aboutus__img, .aboutus__contact {
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+        align-items: center;
+    }
+
+    .aboutus__img img {
+        
+        max-height: auto;
+        width: 100%;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+   
+    
+    .aboutus__contact h1 {
+        font-size: 35px;
+        padding: 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .aboutus__contact p {
+        margin-top: 30px;
+        padding-left: 0;
+        font-size: 18px;
+        text-align: justify;
+        padding-right: 0;
+        margin: auto;
+    }
+
+     .buttom {
+        padding: 5px 5px;
+        border-radius: 20px;
+        margin-left: 150px;
+    }
+
+    .experts__main {
+        max-width: 90%;
+    }
+    
+    .experts__main h1 {
+        font-size: 30px;
+    }
+    
+    .experts__main img {
+        max-width: 100%;
+    }
+   
+    .card {
+        width: 80%;
+        height: 150px;
+    }
+    
+   
+    
+    .card__title {
+        font-size: 25px;
+        
+      
+    }
+    
+    .card__paragraph {
+        font-size: 12px;
+        
+    }
+    
+    .advertisement {
+        margin: auto;
+        max-width: 90% ;
+        margin-top: 50px;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .pricing {
+        flex-direction: column;
+    }
+    .pricing__basic, .pricing__professional {
+        max-width: 90%;
+    }
+    
+    .pricing__title {
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .pricing__value {
+        font-size: 100px;
+    }
+    
+    
+    .pricing__description-element {
+        font-size: 20px;
+    }
+
+    .buttom__submit {
+        margin-left: 200px;
+        margin-top: 40px;
+    }
+
+    /*Animation*/
+
+    .menu__hamburger {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        cursor: pointer;
+        transition: 1s ease-out;
+        margin-left: 20px;
+    }
+    .line-1,.line-2,.line-3 {
+        width: 50px;
+        height: 5px;
+        background-color: #000;
+        margin: 3px 0px;
+        transition: 0.4s ease-out;
+    }
+    .change .line-1 {
+        transform: rotate(-45deg) translate(8px, -7px);
+        position: absolute;
+    }
+  
+    .change .line-2 {
+       opacity: 0;
+    }
+  
+    .change .line-3 {
+       transform: rotate(45deg) translate(-15px, -15px);
+    }
+  
+}
