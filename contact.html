@@ -37,34 +37,47 @@
             </div>
         </header>
         <main>
-            <section class="contact">
-                <div class="container-fluid contact__main">
-                    <h2 id="contact__title">Contact Us</h2>
-                    <form id="user-form" class="form">
-                        <div class="row">
-                            <div class="col-lg-8 contact__form">
-                                <div class="form-box">
-                                    <input type="text" placeholder="Name" class="form-control contact__form-element"
-                                        name="nickName" id="nickName">
-                                    <small class="error-text">Introduce a name</small>
-                                </div>
-                                <div class="form-box">
-                                    <input type="text" placeholder="Last name" class="form-control contact__form-element">
-                                    <small class="error-text">Introduce a last name</small>
-                                </div>
-                                <div class="form-box">
-                                    <input type="text" placeholder="email" class="form-control contact__form-element"
-                                        name="email" id="email">
-                                    <small class="error-text">Introduce a valid email</small>
-                                </div>
-                                <div class="form-box">
-                                    <textarea placeholder="Comment" rows="5" class="form-control contact__form-element"
-                                        name="comment"></textarea>
-                                    <small class="error-text">Introduce a comment</small>
-                                    <button type="button" class="btn btn-dark buttom__submit"
-                                        id="submit-btn">Submit</button>
-                                </div>
+            <section>
+                <div class="container-sign">
+                    <h2 class="contact__title">Contact Us</h2>
+                    <form id="signup-form">
+                        <div class="container-form">
+                            <div class="sign-group">
+                                <label for="name" class="sign-lable" id="name-label">
+                                    Name
+                                </label>
+                                <input type="text" class="sign-input" name="name" id="name"
+                                placeholder="Name">
+                                <p class="sign-mesagge" id="name-mesagge">
+                                    Name must only contain  letters and it must be more than 3
+                                </p>
                             </div>
+                            <div class="sign-group">
+                                <label for="surname" class="sign-lable" id="surname-label">
+                                    Last name
+                                </label>
+                                <input type="text" class="sign-input" name="surname" id="surname" 
+                                placeholder="Surname">
+                                <p class="sign-mesagge" id="surname-mesagge">
+                                    Surname must only contain  letters and it must be more than 3
+                                </p>
+                            </div>
+                            <div class="sign-group">
+                                <label for="email" class="sign-lable" id="email-label">
+                                    Email
+                                </label>
+                                <input type="email" class="sign-input" name="email" id="email" >
+                                <p class="sign-mesagge" id="email-mesagge">
+                                    Provide a valid email address
+                                </p>
+                            </div>
+                            <div class="sign-group">
+                                <label for="email" class="sign-lable" id="email-label">
+                                    Leave a comment
+                                </label>
+                                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                            </div>
+                            <button type="submit" class="buttom submit__buttom">Submit</button>
                         </div>
                     </form>
                 </div>
