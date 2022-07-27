@@ -9,13 +9,12 @@ function myFunction(x) {
 
 
 function hamburger() {
-    let botonera =  document.getElementById('menu_dropdown')
-    if(botonera.style.display=='block') {
-    	botonera.style.display= 'none'
+  let botonera =  document.getElementById('menu_dropdown')
+  if(botonera.style.display=='block') {
+    botonera.style.display= 'none'
     } else {
-    	botonera.style.display= 'block'
+    botonera.style.display= 'block'
     }
 }
-   
 
 

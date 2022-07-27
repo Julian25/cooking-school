@@ -67,6 +67,9 @@ main {
 
 .aboutus {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 700px;
 }
 
 .aboutus__contact {
@@ -160,10 +163,10 @@ footer p {
 /*experts*/
 
 .experts {
-    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 .experts__main {
@@ -382,7 +385,7 @@ textarea {
     border-radius: 4px;
 }
 
-.sign-input:focus {
+.sign-input:focus, textarea:focus {
     border: 3px solid #000000;
 	outline: none;
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
@@ -437,6 +440,46 @@ form a {
     font-weight: 400;
 }
 
+/* Validation styles */
+.input-error {
+    border: 1px solid #F13312;
+}
+
+.label-error {
+    color: #F13312;
+}
+
+.mesagge-error {
+    display: block;
+}
+
+.login-push {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 260px;
+    width: 100%;
+    padding: 20px;
+    background-color: #AACE9B;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.login-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 260px;
+    width: 100%;
+    padding: 20px;
+    background-color: #F13312;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.login-push p, .login-error p {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -450,6 +493,8 @@ form a {
 
     .aboutus__contact p {
         font-size: 18px;
+        width: 80%;
+        max-width: 450px;
     }
 
     .buttom {
@@ -458,22 +503,17 @@ form a {
     }
 
     .aboutus__img {
-        margin-left: 100px;
-        width: 300px;
-    }
-
-    .aboutus__img img {
-        max-width: 300px;
+        margin-left: 80px;
+        margin-right: 50px;
+        /* width: 300px; */
     }
 
     .pricing__title {
         font-size: 40px;
-        
     }
 
     .pricing__value {
         font-size: 120px;
-        
     }
     .pricing__description {
         margin-top: 20px;
@@ -483,8 +523,6 @@ form a {
         font-size: 25px;
         margin-bottom: 20px;
     }
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -492,33 +530,30 @@ form a {
     .menu {
         margin-left: 0;
     }
-    
     .aboutus__contact h1 {
-        font-size: 40px;
+        width: 350px;
+        font-size: 30px;
     }
-    
+
     .aboutus__contact p {
-        font-size: 18px;
-            
+        font-size: 15px;
     }
     .buttom {
         padding: 5px 5px;
         margin-left: 250px;
     }
-    
     .aboutus__img {
         margin-left: 25px;
-        width: 300px;
+        width: 400px;
     }
-    
-    .aboutus__img img {
+    /* .aboutus__img img {
         max-width: 300px;
-    }
+    } */
 
     .experts__main {
         max-width: 600px;
     }
-    
+
     .experts__main img {
         max-width: 600px;
     }
@@ -539,7 +574,7 @@ form a {
     .brand__logo {
         height: auto;
         width: 100%;
-        margin: auto ; 
+        margin: auto ;
         margin-top: 5px;
         margin-right: 0 !important;
     }
@@ -554,11 +589,11 @@ form a {
         padding: 0;
         align-items: center;
     }
-    
+
     .menu__item {
         margin: auto;
         padding: 5px;
-    }    
+    }
 
     .menu__link {
         font-size: 25px;
@@ -570,6 +605,7 @@ form a {
         flex-direction: column-reverse;
         align-items: center;
         margin: auto;
+        height: auto;
     }
 
     .aboutus__img, .aboutus__contact {
@@ -580,21 +616,20 @@ form a {
     }
 
     .aboutus__img img {
-        
         max-height: auto;
         width: 100%;
         margin-top: 50px;
         border-radius: 20px;
     }
-   
-    
+
     .aboutus__contact h1 {
         font-size: 35px;
         padding: 0;
         text-align: center;
         margin-top: 30px;
+        margin-bottom: 30px;
     }
-    
+
     .aboutus__contact p {
         margin-top: 30px;
         padding-left: 0;
@@ -602,9 +637,16 @@ form a {
         text-align: justify;
         padding-right: 0;
         margin: auto;
+        margin-bottom: 30px;
     }
 
-     .buttom {
+    .aboutus__contact-buttom {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+    }
+
+    .buttom {
         padding: 5px 5px;
         border-radius: 20px;
         margin-left: 150px;
@@ -613,37 +655,33 @@ form a {
     .experts__main {
         max-width: 90%;
     }
-    
+
     .experts__main h1 {
         font-size: 30px;
     }
-    
+
     .experts__main img {
         max-width: 100%;
     }
-   
+
     .card {
         width: 80%;
         height: 150px;
     }
-    
-   
-    
+
     .card__title {
         font-size: 25px;
-        
-      
     }
-    
+
     .card__paragraph {
         font-size: 12px;
-        
     }
-    
+
     .advertisement {
         margin: auto;
         max-width: 90% ;
         margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     iframe {
@@ -652,11 +690,12 @@ form a {
     }
     .pricing {
         flex-direction: column;
+        margin-bottom: 60px;
     }
     .pricing__basic, .pricing__professional {
         max-width: 90%;
     }
-    
+
     .pricing__title {
         font-size: 50px;
         text-align: center;
@@ -672,8 +711,9 @@ form a {
     }
 
     .buttom__submit {
-        margin-left: 200px;
-        margin-top: 40px;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 
     /*Animation*/
